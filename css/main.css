@@ -1,0 +1,189 @@
+
+/* Core Site Styles */
+
+html {
+	font-family: Verdana, sans-serif;
+	background: #fff;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: linear-gradient(gray, white);
+	height: 500px;
+}
+main {
+	position: relative;
+	margin-top: 100px;
+	max-width: 1000px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	background-color: #fff;
+	box-shadow: 5px 10px 50px #ccc;
+	z-index: 0;
+}
+#home {
+	height: 400px;
+}
+#contact {
+	background-color: #f5f3f3;
+}
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(24, 67, 83, .6);
+	color: #eee;
+	font-weight: bold;
+	font-family: sans-serif;
+	font-size: 14px;
+	font-variant: small-caps;
+}
+section {
+	padding-top: 50px;
+	margin-top: 50px;
+}
+.heading-padding {
+	padding-bottom: 40px;
+}
+
+/* Element Styles */
+
+h1 {
+	line-height: 50px;
+	font-weight: 900;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	color: rgba(64, 107, 190, 1);
+	text-shadow: 2px 2px 3px rgba(0,0,0,.5);
+}
+h1:after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 150px;
+	background: #222;
+	margin: 5px auto 40px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,.5);
+}
+h2 {
+	line-height: 50px;
+}
+.card-shadow {
+	box-shadow: 5px 10px 10px #ddd;
+}
+
+/* Logo in navigation */
+
+.logo {
+	width: 75px;
+	height: 75px;
+}
+
+
+/* Profile image Style */
+
+.profile {
+	position: relative;
+	top: -50px;
+	left: -15px;
+	width: 100%;
+}
+
+/* Review Styles */
+
+.review {
+	text-align: left;
+	margin: 0 5%;
+	transition: .5s;
+}
+.review:hover {
+	background: #eeeeff;
+}
+
+/*Elements in Gallery*/
+
+.aplus {
+	width: 200px;
+	height: 183px;
+	background: url('../images/aplus-bk.png');
+	transition: .5s;
+}
+.aplus:hover {
+	background: url('../images/aplus.png');
+}
+.project {
+	width: 200px;
+	height: 183px;
+	background: url('../images/project-bk.png');
+	transition: .5s;
+}
+.project:hover {
+	background: url('../images/project.png');
+}
+.html {
+	width: 100px;
+	height: 100px;
+	background: url('../images/html5-bk.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: .3s;
+}
+.html:hover {
+	background: url('../images/html5.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.css {
+	width: 100px;
+	height: 100px;
+	background: url('../images/css3-bk.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: .5s;
+}
+.css:hover {
+	background: url('../images/css3.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.bootstrap {
+	width: 100px;
+	height: 100px;
+	background: url('../images/bootstrap-bk.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	transition: .5s;
+}
+.bootstrap:hover {
+	background: url('../images/bootstrap.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+/* Change header at smaller screen size */
+
+@media (max-width: 576px) {
+	.profile {
+		position: absolute;
+		visibility: hidden;
+	}
+	#home {
+		background-image: url('../images/profile.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		height: 600px; 
+	}
+	.col-sm-7 {
+		margin-top: 220px;
+	}
+	.col-sm-7 h1 {
+		background-color: rgba(250,250,250, .8);
+	}
+	.card-shadow {
+		margin-top: 50px;
+		background: white;
+	}
+}
